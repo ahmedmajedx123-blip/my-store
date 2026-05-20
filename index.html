@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Categories Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Luxury Store
+</div>
+
+<div class="cartBtn" onclick="toggleCart()">
+🛒 السلة
+<span id="cartCount">0</span>
+</div>
+
+</header>
+
+<div id="homePage">
+
+<section class="hero">
+
+<h1>
+متجر فاخر متعدد الأقسام
+</h1>
+
+<p>
+اضغط على أي قسم للدخول إلى المنتجات
+</p>
+
+</section>
+
+<section class="grid">
+
+<div class="card" onclick="openPage('icecream')">
+
+<img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb">
+
+<div class="overlay">
+<h2>🍦 آيس كريم</h2>
+</div>
+
+</div>
+
+<div class="card" onclick="openPage('desserts')">
+
+<img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+
+<div class="overlay">
+<h2>🍰 حلويات</h2>
+</div>
+
+</div>
+
+<div class="card" onclick="openPage('pasta')">
+
+<img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9">
+
+<div class="overlay">
+<h2>🍝 معكرونة</h2>
+</div>
+
+</div>
+
+<div class="card" onclick="openPage('juices')">
+
+<img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4">
+
+<div class="overlay">
+<h2>🥤 عصائر</h2>
+</div>
+
+</div>
+
+<div class="card" onclick="openPage('noodles')">
+
+<img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d">
+
+<div class="overlay">
+<h2>🍜 نودلز</h2>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<!-- ICE CREAM PAGE -->
+
+<div class="page" id="icecream">
+
+<button class="backBtn" onclick="goHome()">
+⬅ العودة
+</button>
+
+<h1 style="margin-bottom:25px;">🍦 آيس كريم</h1>
+
+<div class="productGrid">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f">
+<div class="productContent">
+<div class="productTitle">آيس كريم فانيلا</div>
+<div class="price">1500 د.ع</div>
+<button class="addBtn" onclick="addToCart(this)">إضافة</button>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371">
+<div class="productContent">
+<div class="productTitle">آيس كريم شوكولاتة</div>
+<div class="price">2000 د.ع</div>
+<button class="addBtn" onclick="addToCart(this)">إضافة</button>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1517093157656-b9eccef91cb1">
+<div class="productContent">
+<div class="productTitle">آيس كريم فراولة</div>
+<div class="price">1800 د.ع</div>
+<button class="addBtn" onclick="addToCart(this)">إضافة</button>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57">
+<div class="productContent">
+<div class="productTitle">آيس كريم فستق</div>
+<div class="price">2500 د.ع</div>
+<button class="addBtn" onclick="addToCart(this)">إضافة</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- DESSERTS -->
+
+<div class="page" id="desserts">
+
+<button class="backBtn" onclick="goHome()">
+⬅ العودة
+</button>
+
+<h1 style="margin-bottom:25px;">🍰 حلويات</h1>
+
+<div class="productGrid">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+<div class="productContent">
+<div class="productTitle">كيك شوكولاتة</div>
+<div class="price">3000 د.ع</div>
+<button class="addBtn" onclick="addToCart(this)">إضافة</button>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05">
+<div class="productContent">
+<div class="productTitle">دونات</div>
+<div class="price">1000 د.ع</div>
+<button class="addBtn" onclick="addToCart(this)">إضافة</button>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777">
+<div class="productContent">
+<div class="productTitle">كوكيز</div>
+<div class="price">1200 د.ع</div>
+<button class="addBtn" onclick="addToCart(this)">إضافة</button>
+</div>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c">
+<div class="productContent">
+<div class="productTitle">تشيز كيك</div>
+<div class="price">3500 د.ع</div>
+<button class="addBtn" onclick="addToCart(this)">إضافة</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- PASTA -->
+
+<div class="page" id="pasta">
+
+<button class="backBtn" onclick="goHome()">
+⬅ العودة
+</button>
+
+<h1 style="margin-bottom:25px;">🍝 معكرونة</h1>
+
+<div class="productGrid">
+
+<div class="product"><img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb"><div class="productContent"><div class="productTitle">سباغيتي</div><div class="price">2200 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+<div class="product"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9"><div class="productContent"><div class="productTitle">باستا بيضاء</div><div class="price">2500 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+<div class="product"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601"><div class="productContent"><div class="productTitle">لازانيا</div><div class="price">4000 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+<div class="product"><img src="https://images.unsplash.com/photo-1563379091339-03246963d29d"><div class="productContent"><div class="productTitle">باستا حمراء</div><div class="price">2600 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+</div>
+
+</div>
+
+<!-- JUICES -->
+
+<div class="page" id="juices">
+
+<button class="backBtn" onclick="goHome()">
+⬅ العودة
+</button>
+
+<h1 style="margin-bottom:25px;">🥤 عصائر</h1>
+
+<div class="productGrid">
+
+<div class="product"><img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4"><div class="productContent"><div class="productTitle">عصير برتقال</div><div class="price">1000 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+<div class="product"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd"><div class="productContent"><div class="productTitle">عصير فراولة</div><div class="price">1200 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+<div class="product"><img src="https://images.unsplash.com/photo-1497534446932-c925b458314e"><div class="productContent"><div class="productTitle">عصير مانجو</div><div class="price">1400 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+<div class="product"><img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc"><div class="productContent"><div class="productTitle">كوكتيل</div><div class="price">1800 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+</div>
+
+</div>
+
+<!-- NOODLES -->
+
+<div class="page" id="noodles">
+
+<button class="backBtn" onclick="goHome()">
+⬅ العودة
+</button>
+
+<h1 style="margin-bottom:25px;">🍜 نودلز</h1>
+
+<div class="productGrid">
+
+<div class="product"><img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d"><div class="productContent"><div class="productTitle">نودلز حار</div><div class="price">1700 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+<div class="product"><img src="https://images.unsplash.com/photo-1555126634-323283e090fa"><div class="productContent"><div class="productTitle">رامن</div><div class="price">2500 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+<div class="product"><img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841"><div class="productContent"><div class="productTitle">نودلز دجاج</div><div class="price">1800 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+<div class="product"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624"><div class="productContent"><div class="productTitle">نودلز خضار</div><div class="price">1600 د.ع</div><button class="addBtn" onclick="addToCart(this)">إضافة</button></div></div>
+
+</div>
+
+</div>
+
+
+
+<div class="cart" id="cart">
+
+<h2>
+🛒 السلة
+</h2>
+
+<div id="cartItems">
+<div style="opacity:.6;">السلة فارغة</div>
+</div>
+
+<div class="total" id="total">
+المجموع: 0 د.ع
+</div>
+
+<button class="whatsappBtn" onclick="sendWhatsApp()">
+إرسال الطلب واتساب
+</button>
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
